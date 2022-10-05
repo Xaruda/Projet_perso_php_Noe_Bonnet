@@ -17,6 +17,8 @@
                     <td>{{ c.description }}</td>
                     <td>
                         <a href="{{path("categorie_modifier",{"id":c.id})}}" class="btn btn-primary">modifier</a>
+                        <a href="{{path("categorie_supprimer",{"id":c.id})}}" class="btn btn-danger">supprimer</a>
+                        <a href="{{path("chaton_voir",{"idCategorie":c.id})}}" class="btn btn-warning">chatons</a>
                     </td>
                 </tr>
             {% endfor %}
